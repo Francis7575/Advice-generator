@@ -1,0 +1,86 @@
+.patternDesktop {
+    display: none;
+}
+
+.patternMobile {
+    margin-top: 2rem;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+.backgroundColor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #313A48;
+    box-shadow: 30px 50px 80px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    padding: 2.5rem 1.5rem 4.43rem 1.5rem;
+}
+
+.h1 {
+    font-size: .68rem;
+    font-weight: 800;
+    color: #53FFAA;
+    letter-spacing: .21em;
+    margin-bottom: 1.5rem;
+}
+
+.diceBtn {
+    border: none;
+    position: absolute;
+    bottom: -2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #53FFAA;
+    max-width: 4rem;
+    border-radius: 50%;
+    padding: 1.2rem;
+    cursor: pointer;
+}
+
+.diceBtn:hover {
+    box-shadow: 0 0 40px 0 rgba(82, 255, 169, 1);
+    transition: .2s ease-in;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    letter-spacing: 0.016em;
+    font-weight: 800;
+    text-align: center;
+    color: #CEE3E9;
+    max-width: 18.43rem;
+}
+
+@media (min-width: 64em) {
+    .patternMobile {
+        display: none;
+    }
+
+    .patternDesktop {
+        display: block;
+        margin-top: 3rem;
+    }
+
+    .backgroundColor {
+        min-width: 33.75rem;
+        padding: 3rem 3rem 4.93rem 3rem;
+        border-radius: 15px;
+    }
+
+    .h1 {
+        font-size: .81rem;
+        letter-spacing: .25em;
+    }
+
+    .paragraph {
+        font-size: 1.75rem;
+        letter-spacing: 0.019em;
+        max-width: 27.75rem;
+    }
+}
